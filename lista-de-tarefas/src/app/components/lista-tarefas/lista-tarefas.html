@@ -1,0 +1,44 @@
+<h2>MINHAS TAREFAS</h2>
+
+<form [formGroup]="formItem" class="form-item" (ngSubmit)="enviar()">
+
+  <div class="campo">
+    <input formControlName="nome"
+           placeholder="Nome da tarefa">
+
+    <p class="erro"
+       *ngIf="formItem.get('nome')?.invalid && formItem.get('nome')?.touched">
+      Preencha o nome da tarefa!
+    </p>
+  </div>
+
+  <button type="submit"
+          [disabled]="!formItem.valid">
+    Adicionar
+  </button>
+
+</form>
+
+<div class="lista">
+
+  <div class="tarefa" *ngFor="let tarefa of tarefaService.tarefas">
+
+    <input type="checkbox"
+           [checked]="tarefa.concluida"
+           (change)="tarefaService.marcarConcluida(tarefa)">
+
+    <span [class.concluida]="tarefa.concluida">
+      {{ tarefa.descricao }}
+    </span>
+
+    <button (click)="tarefaService.removerTarefa(tarefa)">
+      Remover
+    </button>
+
+  </div>
+
+</div>
+
+<p class="contador">
+  Tarefas concluídas: {{ tarefaService.contarConcluidas() }}
+</p>

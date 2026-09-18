@@ -1,8 +1,8 @@
 import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { ListaTarefas } from './components/lista-tarefas/lista-tarefas';
 
 @Component({
-  imports: [RouterOutlet],
+  imports: [ListaTarefas],
   selector: 'app-root',
   styleUrl: './app.css',
   templateUrl: './app.html',

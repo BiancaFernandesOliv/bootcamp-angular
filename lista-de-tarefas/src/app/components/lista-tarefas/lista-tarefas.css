@@ -1,0 +1,123 @@
+:host {
+  display: block;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-family: Arial, sans-serif;
+  font-size: 28px;
+  color: #512DA8;
+}
+
+/* Formulário */
+
+.form-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 25px;
+  padding-right: 12px;
+  box-sizing: border-box;
+}
+
+.campo {
+  flex: 1;
+}
+
+  .campo input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+.erro {
+  color: #d32f2f;
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.form-item button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #512DA8;
+  color: white;
+}
+
+  .form-item button:hover {
+    background-color: #4527A0;
+  }
+
+  .form-item button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+
+/* Lista */
+
+.lista {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.tarefa {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+  .tarefa span {
+    flex: 1;
+  }
+
+  /* Checkbox */
+
+  .tarefa input[type="checkbox"] {
+    accent-color: #512DA8;
+    width: 17px;
+    height: 17px;
+    cursor: pointer;
+  }
+
+  /* Botão Remover */
+
+  .tarefa button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #512DA8;
+    color: white;
+  }
+
+    .tarefa button:hover {
+      background-color: #4527A0;
+    }
+
+/* Tarefa concluída */
+
+.concluida {
+  opacity: 0.5;
+  text-decoration: line-through;
+}
+
+/* Contador */
+
+.contador {
+  margin-top: 20px;
+  font-weight: bold;
+  color: #512DA8;
+  text-align: right;
+}
