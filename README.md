@@ -1,59 +1,33 @@
-# ListaTarefas
+# 💻 Desenvolvimento com Angular
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 22.1.8.
+Repositório com o projeto desenvolvido durante o módulo **Angular** do Bootcamp.
 
-## Development server
+## 🎯 Objetivos
 
-To start a local development server, run:
+- Praticar os fundamentos do Angular.
+- Desenvolver aplicações utilizando componentes, templates e data binding.
+- Trabalhar com eventos, diretivas e formulários.
+- Desenvolver uma aplicação de lista de tarefas.
 
-```bash
-ng serve
-```
+## 📁 Estrutura
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+O projeto está organizado em uma aplicação Angular, com os arquivos do projeto dentro da pasta `lista-de-tarefas`.
 
-## Code scaffolding
+## 📋 Lista de Tarefas
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+Aplicação para gerenciamento de tarefas, permitindo:
 
-```bash
-ng generate component component-name
-```
+- Visualizar tarefas cadastradas.
+- Adicionar novas tarefas.
+- Marcar tarefas como concluídas.
+- Remover tarefas.
+- Visualizar a quantidade de tarefas concluídas.
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## 🛠️ Tecnologias
 
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+- Angular
+- TypeScript
+- HTML
+- CSS
+- Git
+- GitHub
